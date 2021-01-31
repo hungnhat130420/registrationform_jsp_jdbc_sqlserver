@@ -1,0 +1,13 @@
+create database UpLoadUserRegistrationForm
+
+create table Userr(
+	contact_id int not null identity(1,1),
+	firstname nvarchar(40) default null,
+	lastname nvarchar(40) default null,
+	email varchar(40) default null,
+	pass varchar(40) default null,
+	birthday varchar(40) default null,
+	gender varchar(10) default null,
+	primary key(contact_id)
+)
+select * from Userr
